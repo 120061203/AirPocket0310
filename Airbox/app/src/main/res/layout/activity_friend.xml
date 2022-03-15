@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Friend">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/friend_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <TextView
+            android:id="@+id/myFriend_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="我的好友"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageButton
+        android:id="@+id/friend_add"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/friend_add" />
+
+    <LinearLayout
+        android:id="@+id/friendfun_sel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/friend_toolbar">
+
+        <Button
+            android:id="@+id/myFriend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="好友"
+            android:textColor="#888888"
+            android:padding="10dp"
+            android:autoSizeTextType="uniform"/>
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="待確認"
+            android:textColor="#888888"
+            android:padding="10dp"
+            android:autoSizeTextType="uniform"/>
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/friend_recyclerview_refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fun_btn"
+        android:layout_below="@+id/friendfun_sel">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/friend_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/fun_btn"
+            android:layout_below="@+id/friendfun_sel"
+            android:background="#FFFFFF" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/friend_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/friendfun_sel"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:textSize="18dp"
+        android:textColor="#999999"
+        android:autoSizeTextType="uniform" />
+
+    <LinearLayout
+        android:id="@+id/fun_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/mapButton"
+            android:src="@drawable/map_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/friend"
+            android:src="@drawable/friend_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/device"
+            android:src="@drawable/device_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/tourism"
+            android:src="@drawable/tourism_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/set"
+            android:src="@drawable/set_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"/>
+    </LinearLayout>
+
+</RelativeLayout>

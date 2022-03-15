@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AirPollution">
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/airPollution_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/airPollution_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="空汙警報"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"  />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/pollution_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/airPollution_toolbar"
+        android:layout_above="@+id/fun_btn"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/hint_text"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="PM2.5濃度超過設定上限，即會發出提醒"
+            android:textSize="18dp" />
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/hint_text"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/seektext"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/seekbar"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/airPollution_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seektext"
+            android:text="儲存"
+            android:background="@drawable/addfriend_acceptbtn_background"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fun_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/mapButton"
+            android:src="@drawable/map_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/friend"
+            android:src="@drawable/friend_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/device"
+            android:src="@drawable/device_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/tourism"
+            android:src="@drawable/tourism_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/set"
+            android:src="@drawable/set_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

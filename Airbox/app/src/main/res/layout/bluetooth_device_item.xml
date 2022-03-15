@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/deviceName"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        tools:text="裝置名稱" />
+
+    <ImageView
+        android:id="@+id/connectImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        tools:src="@drawable/can_clickbtn"
+        android:background="#00000000"
+        android:scaleType="centerInside"/>
+
+</RelativeLayout>

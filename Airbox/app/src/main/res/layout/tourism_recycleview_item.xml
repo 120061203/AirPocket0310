@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/tourism_line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tourism_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="景點名稱"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:autoSizeTextType="uniform"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/addattraction_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tourism_name"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/tourism_addfavorite" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tourism_line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tourism_line1">
+
+    <TextView
+        android:id="@+id/tourism_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="景點星等"
+        android:textColor="#CCCCCC"
+        android:autoSizeTextType="uniform"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tourism_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tourism_rating"
+        android:autoSizeTextType="uniform"
+        android:text="景點評論"
+        android:textColor="#CCCCCC"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tourism_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tourism_comment"
+        android:text="景點距離"
+        android:layout_marginLeft="10dp"
+        android:textColor="#CCCCCC"
+        android:autoSizeTextType="uniform"
+        android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tourism_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tourism_line2"
+        android:text="景點地址"
+        android:textColor="#CCCCCC"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/pm25_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/pm25_one"/>
+
+    <TextView
+        android:id="@+id/user_pm25"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="17dp" />
+
+
+</RelativeLayout>

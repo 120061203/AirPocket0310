@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeviceConnect">
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/deviceconn_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back"
+            android:background="#00000000"
+            android:scaleType="centerInside"/>
+
+        <TextView
+            android:id="@+id/settext_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="添加裝置"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <Button
+        android:id="@+id/buttonDiscovery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deviceconn_toolbar"
+        android:layout_margin="10dp"
+        android:text="搜尋附近的藍芽裝置" />
+
+    <TextView
+        android:id="@+id/deviceconn_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonDiscovery"
+        android:text="附近裝置"
+        android:textSize="16dp"
+        android:layout_marginLeft="15dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/bluetooth_device_item"
+        android:layout_below="@+id/deviceconn_title"
+        android:layout_above="@+id/fun_btn"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <LinearLayout
+        android:id="@+id/fun_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/mapButton"
+            android:src="@drawable/map_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/friend"
+            android:src="@drawable/friend_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/device"
+            android:src="@drawable/device_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/tourism"
+            android:src="@drawable/tourism_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/set"
+            android:src="@drawable/set_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"/>
+
+    </LinearLayout>
+</RelativeLayout>

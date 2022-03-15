@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/drawable/addfriend_acceptbtn_background.xml" value="0.16666666666666666" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/drawable/addfriend_btn_background.xml" value="0.1537037037037037" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/drawable/addfriend_cancelbtn_background.xml" value="0.16666666666666666" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/drawable/datamap_select_background.xml" value="0.14010416666666667" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/drawable/datamap_selectbtn_background.xml" value="0.190625" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/drawable/datamap_selectbtn_click_background.xml" value="0.17552083333333332" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/drawable/datamap_selection_click_background.xml" value="0.19583333333333333" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/drawable/epadata_select_background.xml" value="0.10277777777777777" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/drawable/epadata_select_click_background.xml" value="0.19583333333333333" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/drawable/myfriend_btn_background.xml" value="0.14427083333333332" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/drawable/myfriend_btn_click_background.xml" value="0.14427083333333332" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/drawable/myfriendconfirm_btn_background.xml" value="0.9892857142857143" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/drawable/myfriendconfirm_btn_click_background.xml" value="0.14427083333333332" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/drawable/toolbar.xml" value="0.10277777777777777" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/drawable/userset_btn_background.xml" value="0.1703125" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/drawable/userset_username_background.xml" value="0.1703125" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/layout/acc_modify.xml" value="0.10260416666666666" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/layout/activity_account_register.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/layout/activity_account_set.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/layout/activity_air_pollution.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/layout/activity_attraction_collect.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/layout/activity_device.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/layout/activity_device_connect.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/layout/activity_friend.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/layout/activity_friend_add.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/layout/activity_friend_confirm.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/layout/activity_maps.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/layout/activity_tourism.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/layout/activity_user_set.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/layout/bluetooth_device_item.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/layout/datamap_select.xml" value="0.152" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/layout/friend_confirm_recycleview_item.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/layout/friend_recycleview_item.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/layout/password_modify.xml" value="0.10260416666666666" />
+        <entry key="..\:/AndroidStudioProject/Airbox/app/src/main/res/layout/tourism_recycleview_item.xml" value="0.152" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

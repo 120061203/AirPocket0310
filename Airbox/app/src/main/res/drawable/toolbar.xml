@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <!--元件的漸層-->
+            <gradient
+                android:startColor="#21B9AC"
+                android:endColor="#4CDDCC"
+                android:angle="180" />
+
+            <!--圓角
+            <corners
+                android:bottomLeftRadius="10dp"
+                android:bottomRightRadius="10dp"/>
+            -->
+        </shape>
+    </item>
+</selector>

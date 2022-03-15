@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    android:background="#FFFFFF">
+
+    <Button
+        android:id="@+id/user_name_background"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/userset_username_background"
+        android:text="小松"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp"
+        android:autoSizeTextType="uniform"
+        android:saveEnabled="false"/>
+
+    <!---
+    <View
+        android:id="@+id/user_name_background"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/userset_username_background" />
+
+    <TextView
+        android:id="@+id/friend_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="23dp"
+        android:text="小松"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+-->
+
+    <TextView
+        android:id="@+id/friend_allname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/user_name_background"
+        android:text="好友名稱"
+        android:textColor="#999999"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/addFriend_cancel"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/friend_allname"
+        android:background="@drawable/addfriend_cancelbtn_background"
+        android:text="拒絕"
+        android:textSize="18dp"
+        android:autoSizeTextType="uniform"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/addFriend_accept"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/addFriend_cancel"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:text="接受"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/addfriend_acceptbtn_background"/>
+
+
+</RelativeLayout>

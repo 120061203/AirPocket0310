@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    android:background="#FFFFFF">
+
+    <Button
+        android:id="@+id/user_name_background"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/userset_username_background"
+        android:text="小松"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp"
+        android:autoSizeTextType="uniform" />
+
+    <!---
+    <View
+        android:id="@+id/user_name_background"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/userset_username_background" />
+
+    <TextView
+        android:id="@+id/friend_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="23dp"
+        android:text="小松"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+-->
+
+    <TextView
+        android:id="@+id/friend_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="好友位置"
+        android:layout_centerInParent="true"
+        android:textColor="#999999"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <!---
+    <TextView
+        android:id="@+id/friend_allname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/user_name_background"
+        android:text="好友名稱"
+        android:textColor="#999999"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/friend_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/friend_allname"
+        android:padding="5dp"
+        android:text="好友位置"
+        android:textColor="#999999"
+        android:textSize="18dp" />
+
+-->
+
+    <ImageView
+        android:id="@+id/pm25_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/pm25_one"/>
+
+    <TextView
+        android:id="@+id/user_pm25"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="13dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="18"
+        android:textColor="#000000"
+        android:textSize="17dp" />
+
+
+</RelativeLayout>
